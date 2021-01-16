@@ -22,3 +22,8 @@ public class Mazerecursion {
         } else {
           startPoint[0] = -1;
         }
+      }
+    }
+    
+    return startPoint;
+  }
