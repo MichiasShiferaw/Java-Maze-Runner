@@ -58,3 +58,9 @@ public class Mazerecursion {
       } else if (curMaze[x][y] == '.' || curMaze[x][y] == 'S') { //when there's an open path
         counter = counter + 1;
         
+        if (curMaze[x][y] == 'S') {
+          counter = counter + 1;
+        } else {
+          //marks this as part of the tested path if it's not the starting point
+          curMaze[x][y] = '+';
+        }
