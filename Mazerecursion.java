@@ -82,3 +82,12 @@ public class Mazerecursion {
             counter = counter + 1;
           } else {
             curMaze[x][y] = '.';
+            
+          } //deletes item from solution path if it isn't the starting position
+        }
+        return solved;
+      }
+      
+    } else {
+      //when out of bounds, do nothing.
+    }
