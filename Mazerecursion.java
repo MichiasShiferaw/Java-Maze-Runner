@@ -91,3 +91,9 @@ public class Mazerecursion {
     } else {
       //when out of bounds, do nothing.
     }
+
+    return solved;
+    //int tries() {
+    //return counter ;
+    //}
+  }
