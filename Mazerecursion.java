@@ -50,3 +50,11 @@ public class Mazerecursion {
         }
         
         return solved;
+        
+      } else if (curMaze[x][y] == '#') { //when you hit a wall
+        return solved;
+      } else if (curMaze[x][y] == '+') { //when you've already tried this route
+        return solved;
+      } else if (curMaze[x][y] == '.' || curMaze[x][y] == 'S') { //when there's an open path
+        counter = counter + 1;
+        
