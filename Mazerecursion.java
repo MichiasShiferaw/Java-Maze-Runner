@@ -27,3 +27,8 @@ public class Mazerecursion {
     
     return startPoint;
   }
+   
+  public static boolean findSolu(char[][] curMaze, int x, int y) {
+    int counter = 0;
+    boolean solved = false;
+    
