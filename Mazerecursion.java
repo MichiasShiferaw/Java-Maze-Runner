@@ -64,3 +64,10 @@ public class Mazerecursion {
           //marks this as part of the tested path if it's not the starting point
           curMaze[x][y] = '+';
         }
+        
+        if (findSolu(curMaze, x, y + 1) == true) { //test north/up
+          solved = true;
+          return solved;
+        } else if (findSolu(curMaze, x + 1, y) == true) { //test east/right
+          solved = true;
+          return solved;
