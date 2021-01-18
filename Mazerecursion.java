@@ -31,4 +31,10 @@ public class Mazerecursion {
   public static boolean findSolu(char[][] curMaze, int x, int y) {
     int counter = 0;
     boolean solved = false;
-    
+    if (0 <= x && x < curMaze.length && 0 <= y && y < curMaze[0].length && solved == false) {
+      
+      if (curMaze[x][y] == 'G') { //if goal found
+        solved = true;
+            
+        for (int i = 0; i < curMaze.length; i++) {
+          counter = counter + 1;    
