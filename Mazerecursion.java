@@ -38,3 +38,15 @@ public class Mazerecursion {
             
         for (int i = 0; i < curMaze.length; i++) {
           counter = counter + 1;    
+              
+          String line = ""; //resets "line" variable
+              
+          for (int k = 0; k < curMaze[0].length; k++) {
+                
+            line = line + curMaze[i][k]; 
+                        
+          }
+          System.out.println(line);
+        }
+        
+        return solved;
