@@ -71,3 +71,6 @@ public class Mazerecursion {
         } else if (findSolu(curMaze, x + 1, y) == true) { //test east/right
           solved = true;
           return solved;
+        } else if (findSolu(curMaze, x, y - 1) == true) { //test south/down
+          solved = true;
+          return solved;
