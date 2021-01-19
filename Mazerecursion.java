@@ -115,3 +115,9 @@ public class Mazerecursion {
         String another = null;
         another = inputter.next();
         choices = true;
+      
+        if (another.equals("3")) {
+          mazeFile = "Maze3.txt"; 
+          System.out.println("OHH, you chose the hardest level ");
+        } else if (another.equals("1")) {
+          mazeFile = "Maze1.txt";
