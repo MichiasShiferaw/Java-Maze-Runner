@@ -130,3 +130,12 @@ public class Mazerecursion {
           choices = false;
         }
       }
+
+
+    
+      //Mention the rules
+      System.out.println("Before we start the Maze Recursion, we are going through ground rules");
+      System.out.println("'S' = Starting Point (there can only be one, and it must have one)");
+      System.out.println("'G' = Goal/Finish (there can only be one)");
+      System.out.println("'#' = Wall. Player cannot pass through this.");
+      System.out.println("'.' = Open space. Where the player may walk. \n");        
