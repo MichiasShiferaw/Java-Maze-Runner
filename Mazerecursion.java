@@ -97,3 +97,14 @@ public class Mazerecursion {
     //return counter ;
     //}
   }
+
+  public static void main(String[] args) throws FileNotFoundException { 
+    boolean finished = false;
+    
+    while (finished == false) {
+      FileReader filRead = null;
+      Scanner inputter = new Scanner(System.in);
+      String mazeFile = null;
+      boolean choices = false;
+    
+      System.out.println("Welcome to MazeRunner!!");
