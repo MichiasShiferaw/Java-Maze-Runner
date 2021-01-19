@@ -93,9 +93,6 @@ public class Mazerecursion {
     }
 
     return solved;
-    //int tries() {
-    //return counter ;
-    //}
   }
 
   public static void main(String[] args) throws FileNotFoundException { 
