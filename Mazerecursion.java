@@ -121,3 +121,12 @@ public class Mazerecursion {
           System.out.println("OHH, you chose the hardest level ");
         } else if (another.equals("1")) {
           mazeFile = "Maze1.txt";
+          System.out.println("Ca c'est bebe facile, but here we go!! ");
+        } else if (another.equals("2")) {
+          mazeFile = "Maze2.txt";
+          System.out.println("Not too hard but not too easy, respectable. ");
+        } else {
+          System.out.println("\nSorry not available");
+          choices = false;
+        }
+      }
