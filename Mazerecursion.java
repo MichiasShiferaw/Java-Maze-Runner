@@ -136,3 +136,11 @@ public class Mazerecursion {
       System.out.println("'G' = Goal/Finish (there can only be one)");
       System.out.println("'#' = Wall. Player cannot pass through this.");
       System.out.println("'.' = Open space. Where the player may walk. \n");        
+   
+      try {
+        
+        Scanner scan = new Scanner(mazeFile); 
+
+        BufferedReader buff = null;
+        String line = "";
+       
