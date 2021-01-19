@@ -108,3 +108,10 @@ public class Mazerecursion {
       boolean choices = false;
     
       System.out.println("Welcome to MazeRunner!!");
+    
+      while (choices == false) {
+        System.out.println("Which maze would you like to be solved? "); //ask the user which maze
+        System.out.println("1 is easy \n2 is moderate \n3 is hard"); 
+        String another = null;
+        another = inputter.next();
+        choices = true;
