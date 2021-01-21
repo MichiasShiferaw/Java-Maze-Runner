@@ -218,3 +218,12 @@ public class Mazerecursion {
             
           }
         }
+          
+      } catch (FileNotFoundException e) {
+        System.out.println("There seems to be an issue when solving the maze");
+      } catch (IOException e) {
+        System.out.println("There seems to be an issue when solving the maze");
+      }
+    }
+  }
+}
