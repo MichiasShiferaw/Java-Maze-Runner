@@ -144,3 +144,7 @@ public class Mazerecursion {
         BufferedReader buff = null;
         String line = "";
        
+        filRead = new FileReader(mazeFile);
+        buff = new BufferedReader(filRead);
+      
+        line = buff.readLine(); //reads first line of maze
