@@ -171,3 +171,14 @@ public class Mazerecursion {
           
           line = buff3.readLine(); //selects next line
           lineArray = line.toCharArray(); //turn line into char array
+                
+          for (int y = 0; y < maze[0].length; y++) {
+            maze[x][y] = lineArray[y]; //shoves line array into maze array at row[x]
+          }
+            
+        }
+        buff3.close();//close the files
+
+        //now that the maze has been created:
+        int[] strt = new int[2];
+        strt = findStrt(maze);
