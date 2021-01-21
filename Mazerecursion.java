@@ -160,3 +160,14 @@ public class Mazerecursion {
         
         char[][] maze = new char[k][i]; //2d maze array creation
         char[] lineArray = new char[line.length()];
+
+         
+               
+        //new line reader so it starts at the beginning again  
+        BufferedReader buff3 = new BufferedReader(new FileReader(mazeFile)); 
+
+        //these nested loops populate the "maze[][]" array.
+        for (int x = 0; x < maze.length; x++) {
+          
+          line = buff3.readLine(); //selects next line
+          lineArray = line.toCharArray(); //turn line into char array
