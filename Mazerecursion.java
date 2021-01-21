@@ -148,3 +148,15 @@ public class Mazerecursion {
         buff = new BufferedReader(filRead);
       
         line = buff.readLine(); //reads first line of maze
+        BufferedReader buff2 = new BufferedReader(new FileReader(mazeFile));
+        int k = 0;
+        while (buff2.readLine() != null) k++; 
+      
+        buff.close();
+        buff2.close();
+      
+        int i = (int) (line.length());
+        System.out.println("The maze is " + i + " units long & " + k + " units wide");
+        
+        char[][] maze = new char[k][i]; //2d maze array creation
+        char[] lineArray = new char[line.length()];
