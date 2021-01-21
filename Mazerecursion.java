@@ -201,3 +201,20 @@ public class Mazerecursion {
             //System.out.println("It took " + tries() + " moves");
             System.out.println("\nWould you like try another maze? Y/N");
             String another = null;
+
+             
+                         another = inputter.next();
+            if ((another.equals("N")) || (another.equals("n"))) {
+              finished = true;
+              System.out.println("BYE BYE");
+            } else if ((another.equals("Y")) || (another.equals("y"))) {
+              finished = false;
+              System.out.println("");
+            } else {
+              System.out.println("Your input to if you want to replay is invalid \ntry again");
+            }
+          } else {
+            System.out.println("A solution path was not found :(");
+            
+          }
+        }
