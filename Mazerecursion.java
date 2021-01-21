@@ -182,3 +182,13 @@ public class Mazerecursion {
         //now that the maze has been created:
         int[] strt = new int[2];
         strt = findStrt(maze);
+
+                 
+        if (strt[0] == -1) { //error handler
+          System.out.println("Your maze needs to have a starting point marked by the letter 'S'.");
+          System.out.println("Please run the program with a valid maze next time.");
+        } else {
+          
+          //this occurs when everything worked correctly, we have a valid starting position, 
+          //Then the maze is ready to be solved.
+          System.out.println("Start Position: Maze Array at " + strt[0] + ", " + strt[1]);
