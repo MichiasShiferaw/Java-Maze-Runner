@@ -192,3 +192,12 @@ public class Mazerecursion {
           //this occurs when everything worked correctly, we have a valid starting position, 
           //Then the maze is ready to be solved.
           System.out.println("Start Position: Maze Array at " + strt[0] + ", " + strt[1]);
+
+                     
+          boolean mazeSolved = findSolu(maze, strt[0], strt[1]);
+          
+          if (mazeSolved) {
+            System.out.println("A solution path has been found!");
+            //System.out.println("It took " + tries() + " moves");
+            System.out.println("\nWould you like try another maze? Y/N");
+            String another = null;
